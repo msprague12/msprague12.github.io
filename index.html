@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!-->
+<html class=no-js><!--<![endif]-->
+
+<head>
+    <meta charset=utf-8>
+    <title>MIDILang</title>
+    <meta name=description content="">
+    <meta name=viewport content="width=device-width">
+    <link rel="shortcut icon" href=Icons8-Windows-8-Music-Note-Music.512.ico>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel=stylesheet href=styles/1d7769e0.vendor.css>
+    <link rel=stylesheet href=styles/292afb59.main.css>
+    <link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+<body><!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class=container>
+        <h1>MIDILang</h1>
+        <p class="lead slogan">A programming language that allows you to compose your very own MIDI files</p>
+        <div class=buttons><a href=https://github.com/msprague12/MIDILang.git type=button class="btn btn-lg btn-danger">More on
+                Github</a> </div>
+        <hr>
+        <div class=example>
+            <h3>Create Your Favorite Songs</h3>
+            <div class="left"><strong>Simple Jingle Bells:</strong></div>
+            <pre>create song:
+tempo 100                
+instrument "trumpet"
+note E5 quarter
+note E5 quarter
+note E5 half
+note E5 quarter
+note E5 quarter
+note E5 half
+note E5 quarter
+note G5 quarter
+note C5 quarter
+note D5 quarter
+note E5 whole
+
+repeat 1 {
+    note F5 quarter
+    note F5 quarter
+    note F5 quarter
+    note F5 quarter
+    note F5 quarter
+    note E5 quarter
+    note E5 quarter
+    note E5 quarter
+    note E5 quarter
+    note E5 quarter
+    note D5 quarter
+    note D5 quarter
+    note E5 quarter
+    note D5 quarter
+    note G5 whole
+}
+
+instrument "violin"
+repeat 2 {
+    chord { C4, E4, G4 } quarter
+    rest quarter
+    chord { C4, E4, G4 } quarter
+    rest quarter
+    chord { F4, A4, C5 } quarter
+    chord { G4, B4, D5 } half
+}
+
+instrument "tuba"
+repeat 4 {
+    note C3 half
+    note G2 half
+    note F2 half
+    note G2 half
+}
+
+instrument "orchestral_harp"
+chord { C4, E4, G4 } whole
+
+end
+                </pre>
+        <div class=buttons><a href=jingle_bells.mid type=button class="btn btn-lg btn-danger">Download This Song</a> </div>
+            <hr>
+            <h3 class=subl>Listen To Your Song in GarageBand!</h3><img src=images/garageBandExample.png class=img-thumbnail>
+            <div class=footer>
+                <div class=pull-left>
+                    <p style="margin: 10.5px 0px 0px 5px"> by Matthew Sprague</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=scripts/a92a213a.vendor.js></script>
+    <script src=scripts/6aada3b6.main.js></script>
